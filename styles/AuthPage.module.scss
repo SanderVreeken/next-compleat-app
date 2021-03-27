@@ -1,0 +1,23 @@
+@use 'variables' as *;
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  height: 100vh;
+  max-width: $max-screen-width;
+  width: 100%;
+}
+
+.main {
+  > div {
+    align-items: center;
+    display: flex;
+    height: calc(100% - #{$header-height});
+    justify-content: center;
+    width: 100%;
+  }
+}
